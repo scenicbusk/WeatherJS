@@ -5,11 +5,7 @@
     
 }
 body{
-    background:linear-gradient(45deg,#0a0a0a,#3a4452);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    background:#0a2b2b;
 }
 nav{
     display: flex;
