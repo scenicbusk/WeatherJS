@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4TS5CT8MR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-Q4TS5CT8MR');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" />
+     <style>
+          .external{
+               color:white;
+               text-decoration:none;
+               font-size:1.2rem;
+               margin-top:35px;
+          }
+     </style>
+</head>
+
+<body>
+    <nav>
+        <h2>Weather</h2>
+        <i class="fa-solid fa-cloud"></i>
+    </nav>
+    <div class="weather-card">
+        <div class="weather-show">
+            <div class="search">
+                <input class="search-place" type="text" placeholder="search place">
+                <button class="search-icon">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="weather-display-data">
+                <div class="first">
+                    <div class="lat">
+                        <label for="">latitude</label>
+                        <div id="coord-lat"></div>
+                    </div>
+                    <div class="lon">
+                        <label for="">longitude</label>
+                        <div id="coord-lon"></div>
+                    </div>
+                    <div class="winddegree">
+                        <label for="">wind Deg</label>
+                        <div id="wind-deg"></div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="loc">
+                        <div id="location"></div>
+                    </div>
+                    <div class="weather-image">
+                        <img class="weather-icon" src="cloudy.png" alt="">
+                    </div>
+                    <div class="show">
+                        <div id="temp"></div>
+                        <div id="feels-like"></div>
+                    </div>
+                </div>
+                <div class="last">
+                    <div class="date"></div>
+                    <div class="time"></div>
+                </div>
+            </div>
+        </div>
+            <div class="weather-data">
+                <div class="sec1">
+                    <div class="coord">
+                        <div class="humid-display">
+                            <div id="humid"></div>&nbsp;&nbsp;
+                            <img id="humidicon" src="humidity.png" alt="">
+                        </div>
+                        <label for="">Humidity</label>
+                        <div class="wind-icon">
+                            <div id="wind-speed"></div>&nbsp;&nbsp;
+                            <img id="windicon" src="wind.png" alt="">
+                        </div>
+                        <label for="">Wind Speed</label>
+                    </div>
+                </div>
+                <div class="sec2">
+                    <div class="temp">
+                        <div class="temp-icon">
+                            <div id="temp-min"></div>&nbsp;&nbsp;
+                            <img id="tempicon1" src="temperature.png" alt="">
+                        </div>
+                        <label for="">Min. Temp.</label>
+                        <div class="temp-icon">
+                            <div id="temp-max"></div>&nbsp;&nbsp;
+                            <img id="tempicon2" src="thermometer.png" alt="">
+                        </div>
+                        <label for="">Max. Temp.</label>
+                    </div>
+                </div>
+            </div>
+         <div class="external">
+              <a href="https://scenicbusk.github.io/food-blog">Check out our Food Blog, Click here.</a>
+         </div>
+        
+</body>
+<script src="weather.js"></script>
+
+</html>
